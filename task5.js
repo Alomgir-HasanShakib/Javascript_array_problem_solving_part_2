@@ -13,7 +13,8 @@ function totalSalary(employeeInfo) {
   for (const employee of employeeInfo) {
     const currentSalary = employee.starting;
     const increementedSalary = employee.experience * employee.increment;
-    totalSalary += currentSalary + increementedSalary;
+    const afterIncrementSalary = currentSalary + increementedSalary;
+    totalSalary += afterIncrementSalary;
   }
   return totalSalary;
 }
